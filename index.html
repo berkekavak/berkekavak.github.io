@@ -174,15 +174,37 @@ section { border-top: 1px solid var(--hairline); padding: 60px 0 68px; }
   color: var(--accent);
   margin-top: auto;
 }
-.nda-note {
+.nda {
   margin: 56px 0 0;
-  padding-top: 24px;
+  padding-top: 28px;
   border-top: 1px solid var(--hairline);
+}
+.nda-lead { margin: 0 0 18px; font-size: 16px; font-weight: 500; }
+.nda-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 44px;
+}
+.nda-list li {
+  position: relative;
+  padding-left: 20px;
   color: var(--slate);
   font-size: 16px;
-  max-width: 72ch;
+  line-height: 1.55;
 }
-.nda-note b { color: var(--ink); font-weight: 500; }
+.nda-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.66em;
+  width: 9px;
+  height: 2px;
+  background: var(--accent);
+}
+.nda-list b { color: var(--ink); font-weight: 500; }
 
 /* ---------- experience ---------- */
 .xp {
@@ -270,6 +292,7 @@ footer .up a:hover { color: var(--accent); }
   .hero-top { grid-template-columns: 1fr; gap: 28px; }
   .hero-photo { width: 200px; }
   .logo-grid { grid-template-columns: 1fr; gap: 44px; }
+  .nda-list { grid-template-columns: 1fr; }
   .xp, .about-cols { grid-template-columns: 1fr; }
   .xp .when { padding-top: 0; }
   header .links { margin-left: 0; }
@@ -476,7 +499,15 @@ footer .up a:hover { color: var(--accent); }
         </article>
 
       </div>
-      <p class="nda-note">Plus work under NDA: an <b>agentic RAG chatbot</b> built end to end for a maritime platform startup, a <b>biopsy-triage model</b> that doubled the patients-in-need identified, <b>semantic search</b> on AWS with hybrid retrieval, and production <b>NLP</b> for telecom and food-delivery brands.</p>
+      <div class="nda">
+        <p class="nda-lead">Not every client can be named. Recent projects under NDA:</p>
+        <ul class="nda-list">
+          <li><b>Agentic RAG chatbot</b>, built end to end for a maritime platform startup</li>
+          <li><b>Biopsy-triage model</b> that doubled the patients in need identified</li>
+          <li><b>Semantic search</b> on AWS with hybrid retrieval and reranking</li>
+          <li><b>Production NLP</b> for telecom and food-delivery brands</li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -520,7 +551,7 @@ footer .up a:hover { color: var(--accent); }
         <div class="bio">
           <p>I work at the intersection of <strong>applied research and delivery</strong>: comfortable reading the paper, but judged on whether the system runs in production and moves a business metric.</p>
           <p>My master's research at Boğaziçi University on biomedical entity normalization with LLMs, across Spanish, English and German, was published at the <strong>BioCreative VIII SympTEMIST track</strong>. Before that, an industrial engineering and economics double major at Koç University taught me to treat ML problems as business problems first.</p>
-          <p>Based in Berlin with German permanent residency. I work in English and Turkish, and my German is B1 certified.</p>
+          <p>Based in Berlin. I work in English and Turkish, and my German is B1 certified.</p>
         </div>
         <dl class="facts">
           <div class="with-logo">
