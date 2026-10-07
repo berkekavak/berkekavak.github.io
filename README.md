@@ -1,3 +1,5 @@
 # berkekavak.com
 
-Personal website of Berke Kavak, Senior Data Scientist in Berlin.
+AI & data consulting site of Berke Kavak, Berlin.
+
+Single static page (`index.html`) with assets in `assets/`. No build step.
