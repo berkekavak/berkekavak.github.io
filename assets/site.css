@@ -504,3 +504,21 @@ footer .up:hover { color: var(--fg); }
 @media (min-width: 961px) { .work-grid.four { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
 @media (max-width: 520px) { .work-grid.four { grid-template-columns: 1fr; } }
 @media (max-width: 520px) { .hero-meta { grid-template-columns: 1fr; gap: 16px; } }
+
+/* Three-up service grid and the stack strip under it */
+.grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.stack {
+  margin-top: 16px; padding: clamp(22px, 3vw, 32px);
+  border-radius: var(--radius); background: var(--bg); box-shadow: var(--shadow-sm);
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 20px 48px; align-items: start;
+}
+.stack .label { margin-bottom: 12px; }
+.stack .h3 { font-size: 1.25rem; }
+.stack > div > p { margin: 10px 0 0; color: var(--fg-2); font-size: 1rem; max-width: 40ch; text-wrap: pretty; }
+.stack dl { margin: 0; }
+.stack dl > div { display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 12px; padding: 12px 0; border-top: 1px solid var(--line); }
+.stack dl > div:first-child { border-top: 0; padding-top: 0; }
+.stack dt { font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--fg-3); padding-top: 2px; }
+.stack dd { margin: 0; font-size: 0.9375rem; color: var(--fg); }
+@media (max-width: 960px) { .grid-3 { grid-template-columns: 1fr; } }
+@media (max-width: 760px) { .stack { grid-template-columns: 1fr; } .stack dl > div { grid-template-columns: 90px minmax(0, 1fr); } }

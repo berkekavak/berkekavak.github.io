@@ -96,6 +96,17 @@ def render(c):
         for i, s in enumerate(sv["items"])
     )
 
+    st = sv.get("stack")
+    stack = ""
+    if st:
+        rows = "".join(f'<div><dt>{row["k"]}</dt><dd>{row["v"]}</dd></div>' for row in st["rows"])
+        stack = (
+            '<div class="stack reveal">'
+            f'<div><p class="label">{st["label"]}</p><h3 class="h3">{st["h3"]}</h3><p>{st["p"]}</p></div>'
+            f"<dl>{rows}</dl>"
+            "</div>"
+        )
+
     genai = "".join(
         f'<article class="work nda-card reveal"{delay(i)}>'
         f'<span class="tag">{wk["nda_tag"]}</span>'
@@ -237,7 +248,8 @@ def render(c):
         <h2 class="h2 reveal" data-delay="1">{sv["h2"]}</h2>
         <p class="lead reveal" data-delay="2">{sv["lead"]}</p>
       </div>
-      <div class="grid-2">{services}</div>
+      <div class="grid-3">{services}</div>
+      {stack}
     </div>
   </section>
 

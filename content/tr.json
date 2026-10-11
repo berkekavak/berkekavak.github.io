@@ -2,9 +2,9 @@
   "lang": "tr",
   "locale": "tr_TR",
   "title": "Berke Kavak · Agentic AI Danışmanlığı, Berlin",
-  "description": "Berke Kavak'tan agentic AI danışmanlığı, Berlin: Kendi bulutunuzda üretimde çalışan AI ajanları, RAG asistanları ve LLM sistemleri. Arkasında adidas, Philips, Sompo, PEMCO ve Davies için altı yıllık üretim ML deneyimi.",
+  "description": "Berke Kavak'tan agentic AI danışmanlığı, Berlin: İşiniz için AI ajanları, asistanlar ve otomasyon akışları. Open source öncelikli; Claude, GPT, Gemini ya da açık ağırlıklı modellerle, kendi bulutunuzda. Arkasında adidas, Philips, Sompo, PEMCO ve Davies için altı yıllık üretim ML deneyimi.",
   "og_title": "Berke Kavak · Agentic AI Danışmanlığı",
-  "og_description": "Üretime çıkan ve orada kalan AI ajanları. AB ve ABD'deki ekipler için agentic sistemler, değerlendirme ve LLM platformları.",
+  "og_description": "Üretime çıkan ve orada kalan AI ajanları ve otomasyon akışları. Open source öncelikli, tercih ettiğiniz modelle, kendi bulutunuzda.",
   "a11y": {
     "skip": "İçeriğe geç",
     "nav": "Ana menü",
@@ -24,81 +24,204 @@
   "hero": {
     "label": "Agentic AI Danışmanlığı · Berlin",
     "h1": "Üretime çıkan ve orada kalan AI ajanları.",
-    "lead": "Agentic AI sistemleri tasarlıyor, kuruyor ve sağlamlaştırıyorum: belgelerinizden bilgi çeken, araçlarınız üzerinden aksiyon alan ve çok adımlı işleri tamamlayan asistanlar. Gerçek görevlerle değerlendirilmiş, kendi bulutunuzda çalışan, ekibinize ait.",
+    "lead": "İşiniz için AI ajanları, asistanlar ve etraflarındaki otomasyon akışlarını kuruyorum. Open source öncelikli; Claude, GPT, Gemini ya da açık ağırlıklı modeller, tercih sizin. Kendi bulutunuzda çalışır, ekibinize aittir.",
     "cta": "Görüşelim",
     "cta2": "Projelere bak",
     "meta": [
-      {"b": "6+ yıl", "s": "üretimde ML ve GenAI"},
-      {"b": "Üretimde ajanlar", "s": "RAG, araç kullanımı, çok adımlı iş akışları"},
-      {"b": "4 pazar", "s": "ABD · AB · Brezilya · Türkiye"}
+      {
+        "b": "6+ yıl",
+        "s": "üretimde ML ve GenAI"
+      },
+      {
+        "b": "Open source öncelikli",
+        "s": "Claude · GPT · Gemini · açık ağırlıklı modeller"
+      },
+      {
+        "b": "Sizin bulutunuz",
+        "s": "AWS · Databricks · GCP · Azure · on-premise"
+      }
     ]
   },
   "logos_label": "Proje yaptığım markalar",
   "services": {
     "label": "Hizmetler",
-    "h2": "Dört farklı çalışma şekli.",
-    "lead": "Her iş, otomatikleştirmeye değer bir iş akışıyla başlar ve ekibinizin bensiz işlettiği bir sistemle biter.",
+    "h2": "Kurduğum üç şey.",
+    "lead": "Ajanlar, etraflarındaki otomasyon ve üzerinde çalıştıkları veri. Open source öncelikli, tercih ettiğiniz modelle.",
     "items": [
       {
-        "title": "Agentic sistemler ve asistanlar",
-        "p": "Belgelerinizden bilgi çeken, araçlarınızı çağıran ve çok adımlı işleri tamamlayan AI ajanları ve RAG asistanları. Gerektiği yerde insan döngüde kalır.",
-        "chips": ["Agentic RAG", "Araç kullanımı ve function calling", "Çok adımlı iş akışları", "İnsan döngüde"]
+        "title": "AI ajanları ve asistanlar",
+        "p": "Belgelerinizden yanıt veren asistanlar, araçlarınızı kullanıp çok adımlı işleri tamamlayan ajanlar. Gerektiği yerde insan döngüde kalır.",
+        "chips": [
+          "RAG asistanları",
+          "Araç kullanan ajanlar",
+          "Çok adımlı iş akışları",
+          "İnsan döngüde"
+        ]
       },
       {
-        "title": "Değerlendirme, guardrail ve güvenilirlik",
-        "p": "Bir ajanı güvenle çalıştırılabilir kılan kısım: çevrimdışı ve çevrimiçi değerlendirmeler, guardrail'ler, gözlemlenebilirlik, gecikme ve maliyet kontrolü. İlk olaydan sonra değil, yayından önce kurulur.",
-        "chips": ["LLM değerlendirme", "Guardrail'ler", "Gözlemlenebilirlik", "Maliyet ve gecikme"]
+        "title": "Otomasyon akışları",
+        "p": "Ajanları zaten kullandığınız sistemlere bağlamak: e-posta, CRM, ticket sistemi, ERP, Slack ya da Teams. Belge girişi, onaylar, raporlama ve aradaki devirler.",
+        "chips": [
+          "Belge girişi",
+          "Onay ve yönlendirme",
+          "Raporlama",
+          "CRM · ERP · ticket"
+        ]
       },
       {
-        "title": "Veri, retrieval ve platform",
-        "p": "Ajana hazır altyapı: hibrit retrieval ve reranking ile semantik arama, Lakehouse veri hatları, AWS ve Databricks üzerinde LLMOps. Klasik ML'in daha iyi cevap olduğu yerde tahminleme, churn ve dolandırıcılık modelleri.",
-        "chips": ["Hibrit retrieval", "Databricks Lakehouse", "AWS · GCP · Azure", "Tahminsel ML"]
-      },
-      {
-        "title": "Danışmanlık ve fractional AI lead",
-        "p": "Agentic AI yol haritası, kullanım senaryosu önceliklendirme, yap-ya-da-satın-al ve mimari kararları, ekipleriniz arasında teslimatın uygulamalı liderliği.",
-        "chips": ["Senaryo puanlama", "Yap ya da satın al", "Mimari değerlendirme", "Fractional AI lead"]
+        "title": "Veri ve ML",
+        "p": "Ajanların üzerinde çalıştığı altyapı ve daha iyi cevap olduğu yerde klasik ML: AWS ve Databricks üzerinde veri hatları ve Lakehouse, tahminleme, churn ve dolandırıcılık modelleri, panolar.",
+        "chips": [
+          "Databricks Lakehouse",
+          "Tahminleme · churn · dolandırıcılık",
+          "Semantik arama",
+          "Power BI · Tableau"
+        ]
       }
-    ]
+    ],
+    "stack": {
+      "label": "Nasıl kuruyorum",
+      "h3": "Open source öncelikli. Model tercihe bağlı.",
+      "p": "Lisans bağımlılığı yok: kod sizin, modeli sonradan değiştirebilirsiniz. Ortamınızdan dışarı hiçbir şey çıkmaz.",
+      "rows": [
+        {
+          "k": "Open source",
+          "v": "LangGraph · n8n · pgvector · Qdrant · FastAPI · Docker"
+        },
+        {
+          "k": "Modeller",
+          "v": "Claude · GPT · Gemini · kendi donanımınızda Llama, Mistral ya da Qwen"
+        },
+        {
+          "k": "Çalıştığı yer",
+          "v": "AWS · Databricks · GCP · Azure · on-premise"
+        }
+      ]
+    }
   },
   "work": {
     "label": "Projeler",
     "h2": "İş sonuçlarıyla ölçülür.",
-    "lead": "Önce agentic ve GenAI işleri, sonra arkasındaki üretim ML'i. Her biri değerlendirildiği sonuçla birlikte.",
+    "lead": "Önce ajanlar ve GenAI, sonra arkasındaki üretim ML'i. Her biri değerlendirildiği sonuçla birlikte.",
     "group1": "Agentic ve GenAI",
     "group2": "Üretim ML ve veri",
     "nda_tag": "NDA kapsamında",
     "genai": [
-      {"sector": "Denizcilik platformu startup'ı", "title": "Agentic RAG asistanı", "p": "Operasyonel belgeler ve platform verisi üzerinde uçtan uca agentic bir asistan: retrieval, araç çağrıları ve çok adımlı yanıtlar. İlk prototipten üretime.", "result": "Uçtan uca, prototipten üretime"},
-      {"sector": "Kurumsal arama", "title": "AWS üzerinde semantik arama", "p": "Büyük belge koleksiyonları üzerinde reranking'li hibrit retrieval. AWS'de yayınlandı, gerçek kullanıcı sorgularıyla değerlendirildi.", "result": "Üretimde hibrit retrieval + reranking"},
-      {"sector": "Telekom ve yemek teslimatı", "title": "Üretimde NLP", "p": "Telekom ve yemek teslimatı markalarına üretim ölçeğinde hizmet veren metin sınıflandırma ve bilgi çıkarım modelleri.", "result": "İki tüketici markasında canlı"},
-      {"sector": "Sağlık", "title": "Biyopsi triyaj modeli", "p": "Hastaları biyopsi için önceliklendiren klinik bir triyaj modeli; ihtiyaç sahibi hastaların tespitini iki katına çıkardı.", "result": "İhtiyaç sahibi hastalar 2 kat daha fazla tespit"}
+      {
+        "sector": "Denizcilik platformu startup'ı",
+        "title": "Agentic RAG asistanı",
+        "p": "Operasyonel belgeler ve platform verisi üzerinde uçtan uca agentic bir asistan: retrieval, araç çağrıları ve çok adımlı yanıtlar. İlk prototipten üretime.",
+        "result": "Uçtan uca, prototipten üretime"
+      },
+      {
+        "sector": "Kurumsal arama",
+        "title": "AWS üzerinde semantik arama",
+        "p": "Büyük belge koleksiyonları üzerinde reranking'li hibrit retrieval. AWS'de yayınlandı, gerçek kullanıcı sorgularıyla değerlendirildi.",
+        "result": "Üretimde hibrit retrieval + reranking"
+      },
+      {
+        "sector": "Telekom ve yemek teslimatı",
+        "title": "Üretimde NLP",
+        "p": "Telekom ve yemek teslimatı markalarına üretim ölçeğinde hizmet veren metin sınıflandırma ve bilgi çıkarım modelleri.",
+        "result": "İki tüketici markasında canlı"
+      },
+      {
+        "sector": "Sağlık",
+        "title": "Biyopsi triyaj modeli",
+        "p": "Hastaları biyopsi için önceliklendiren klinik bir triyaj modeli; ihtiyaç sahibi hastaların tespitini iki katına çıkardı.",
+        "result": "İhtiyaç sahibi hastalar 2 kat daha fazla tespit"
+      }
     ],
     "ml": [
-      {"logo": "adidas", "sector": "Perakende · Veri platformu", "p": "Ürün yaşam döngüsü verisi Databricks Lakehouse'a: ETL, MLflow hatları ve planlama ekipleri için Power BI raporlama.", "result": "Yılda ~1M $'lık karara girdi"},
-      {"logo": "esn", "sector": "Tüketici ürünleri · Tedarik planlama", "p": "The Quality Group markaları için tedarik planlama ve otomasyon; Databricks üzerinde Tableau panolarını besleyen ETL hatları.", "result": "Uygulama süresi: aylardan haftalara"},
-      {"logo": "pemco", "sector": "Sigorta · Tahminsel ML", "p": "Uçtan uca üç ML projesi: satış tahmini, ideal müşteriyi elde tutma ve çapraz / üst satış hedefleme.", "result": "+%1,5 elde tutma ≈ yılda 107 bin $"},
-      {"logo": "davies", "sector": "Sigorta hizmetleri · Dolandırıcılık", "p": "Hasar sürecine doğrudan entegre edilen hasar dolandırıcılığı tespiti ve ödeme denetimi modelleri.", "result": "Hata tespiti: 8'de 1'den 4'te 1'e"},
-      {"logo": "isyatirim", "sector": "Finans · Churn", "p": "Türkiye'nin önde gelen yatırım kuruluşu için müşteri kaybı tahmini; riskli müşteriler ilişki yöneticilerine erkenden iletiliyor.", "result": "Riskli müşteriler erken tespit"},
-      {"logo": "sompo", "sector": "Sigorta · Segmentasyon", "p": "Sompo Seguros Brasil'de kârlılık ve büyüme için oto sigortası mikro segmentasyonu; yılda 500 binden fazla poliçede fiyatlamaya yön veriyor.", "result": "Aktüer verimliliğinde %50'ye varan artış"},
-      {"logo": "philips", "sector": "Sağlık · Araştırma", "p": "AB araştırma projesinde teknik lider olarak MR bileşeni arıza tahmini; ayrıca ITEA'nın ilaç dolabı projesi.", "result": "2 AB konsorsiyum projesi"},
-      {"logo": null, "sector": "Ve dahası", "p": "ABD ve Avrupa müşterileri için Spark ve MLflow üzerinde elde tutma, NLP ve klinik modeller; on-premise ile SageMaker, GCP ve Azure'da yayınlandı.", "link": "Benzer bir problemi sorun →"}
+      {
+        "logo": "adidas",
+        "sector": "Perakende · Veri platformu",
+        "p": "Ürün yaşam döngüsü verisi Databricks Lakehouse'a: ETL, MLflow hatları ve planlama ekipleri için Power BI raporlama.",
+        "result": "Yılda ~1M $'lık karara girdi"
+      },
+      {
+        "logo": "esn",
+        "sector": "Tüketici ürünleri · Tedarik planlama",
+        "p": "The Quality Group markaları için tedarik planlama ve otomasyon; Databricks üzerinde Tableau panolarını besleyen ETL hatları.",
+        "result": "Uygulama süresi: aylardan haftalara"
+      },
+      {
+        "logo": "pemco",
+        "sector": "Sigorta · Tahminsel ML",
+        "p": "Uçtan uca üç ML projesi: satış tahmini, ideal müşteriyi elde tutma ve çapraz / üst satış hedefleme.",
+        "result": "+%1,5 elde tutma ≈ yılda 107 bin $"
+      },
+      {
+        "logo": "davies",
+        "sector": "Sigorta hizmetleri · Dolandırıcılık",
+        "p": "Hasar sürecine doğrudan entegre edilen hasar dolandırıcılığı tespiti ve ödeme denetimi modelleri.",
+        "result": "Hata tespiti: 8'de 1'den 4'te 1'e"
+      },
+      {
+        "logo": "isyatirim",
+        "sector": "Finans · Churn",
+        "p": "Türkiye'nin önde gelen yatırım kuruluşu için müşteri kaybı tahmini; riskli müşteriler ilişki yöneticilerine erkenden iletiliyor.",
+        "result": "Riskli müşteriler erken tespit"
+      },
+      {
+        "logo": "sompo",
+        "sector": "Sigorta · Segmentasyon",
+        "p": "Sompo Seguros Brasil'de kârlılık ve büyüme için oto sigortası mikro segmentasyonu; yılda 500 binden fazla poliçede fiyatlamaya yön veriyor.",
+        "result": "Aktüer verimliliğinde %50'ye varan artış"
+      },
+      {
+        "logo": "philips",
+        "sector": "Sağlık · Araştırma",
+        "p": "AB araştırma projesinde teknik lider olarak MR bileşeni arıza tahmini; ayrıca ITEA'nın ilaç dolabı projesi.",
+        "result": "2 AB konsorsiyum projesi"
+      },
+      {
+        "logo": null,
+        "sector": "Ve dahası",
+        "p": "ABD ve Avrupa müşterileri için Spark ve MLflow üzerinde elde tutma, NLP ve klinik modeller; on-premise ile SageMaker, GCP ve Azure'da yayınlandı.",
+        "link": "Benzer bir problemi sorun →"
+      }
     ]
   },
   "approach": {
     "label": "Yaklaşım",
-    "h2": "Erken prototip. Otonomiden önce değerlendirme. Devir teslim.",
-    "lead": "Çalışan bir ajan bin slayttan değerlidir. Hızla ona ulaşırım, sonra üretimde güvenilecek kadar sıkıcı hale getiririm.",
+    "h2": "Erken prototip. Sizin stack'inizde yayın. Devir teslim.",
+    "lead": "Çalışan bir ajan bin slayttan değerlidir. Hızla ona ulaşırım, sonra üretimde çalışacak kadar sıkıcı hale getiririm.",
     "steps": [
-      {"label": "01 · Keşif", "title": "İş akışını bul", "p": "Süreciniz ve verinizde bir-iki hafta. Otomatikleştirmeye değer iş akışını, başarı ölçütünü ve insanın döngüde kalacağı yerleri birlikte belirleriz."},
-      {"label": "02 · Prototip", "title": "Gerçek işte kanıtla", "p": "Haftalar içinde gerçek belgeleriniz ve araçlarınız üzerinde çalışan bir ajan. Devam kararını sunumla değil kanıtla verin."},
-      {"label": "03 · Sağlamlaştırma", "title": "Otonomiyi hak et", "p": "Değerlendirme setleri, guardrail'ler, gözlemlenebilirlik ve maliyet kontrolleri. Kendi bulutunuzda, ekibin zaten kullandığı araçlara entegre."},
-      {"label": "04 · Devir teslim", "title": "Sistem ekibinizin", "p": "Dokümantasyon, eğitim ve temiz bir devir. Hedef, bensiz işlettiğiniz bir sistem ve tekrar aramak için bir neden."}
+      {
+        "label": "01 · Keşif",
+        "title": "İş akışını bul",
+        "p": "Süreciniz ve verinizde bir-iki hafta. Otomatikleştirmeye değer iş akışını, başarı ölçütünü ve insanın döngüde kalacağı yerleri birlikte belirleriz."
+      },
+      {
+        "label": "02 · Prototip",
+        "title": "Gerçek işte kanıtla",
+        "p": "Haftalar içinde gerçek belgeleriniz ve araçlarınız üzerinde çalışan bir ajan. Devam kararını sunumla değil kanıtla verin."
+      },
+      {
+        "label": "03 · Yayın",
+        "title": "Güvenilir hale getir",
+        "p": "Değerlendirme, guardrail'ler, izleme ve maliyet kontrolü. Kendi bulutunuzda, ekibin zaten kullandığı araçlara bağlı."
+      },
+      {
+        "label": "04 · Devir teslim",
+        "title": "Sistem ekibinizin",
+        "p": "Dokümantasyon, eğitim ve temiz bir devir. Hedef, bensiz işlettiğiniz bir sistem ve tekrar aramak için bir neden."
+      }
     ],
     "principles": [
-      {"title": "Otonomiden önce değerlendirme", "p": "Bir ajan ancak değerlendirmeler hak ettiğini gösterdikçe daha fazla serbestlik kazanır. Varsayılmaz, ölçülür."},
-      {"title": "Sizin stack'iniz, sizin bulutunuz", "p": "AWS, Databricks, GCP veya Azure. Yeni bir tedarikçi bağımlılığı yok, ortamınızdan dışarı çıkan hiçbir şey yok."},
-      {"title": "Kara kutu yok", "p": "Okunabilir kod, belgelenmiş kararlar ve yeniden çalıştırabileceğiniz değerlendirmeler. Her şeyi denetleyebilmelisiniz."}
+      {
+        "title": "Open source öncelikli",
+        "p": "Size ait, okunabilir kod. Lisans bağımlılığı yok, denetleyip yeniden çalıştıramayacağınız hiçbir şey yok."
+      },
+      {
+        "title": "Model tercihe bağlı",
+        "p": "Claude, GPT, Gemini ya da kendi donanımınızda açık ağırlıklı bir model. Sonradan değiştirilebilir, içine gömülü değil."
+      },
+      {
+        "title": "Sizin bulutunuz, sizin veriniz",
+        "p": "AWS, Databricks, GCP, Azure ya da on-premise. Ortamınızdan dışarı hiçbir şey çıkmaz."
+      }
     ]
   },
   "about": {
@@ -111,18 +234,56 @@
       "İngilizce ve Türkçe çalışıyorum, iyi derecede Almanca biliyorum."
     ],
     "facts": [
-      {"logo": "bogazici", "alt": "Boğaziçi Üniversitesi", "dt": "Yüksek Lisans, Bilgisayar Müh.", "dd": "Boğaziçi Üniversitesi", "sub": "· 2020–2023"},
-      {"logo": "koc", "alt": "Koç Üniversitesi", "dt": "Lisans, Endüstri Müh. + Ekonomi", "dd": "Koç Üniversitesi", "sub": "· çift anadal · Vehbi Koç Onur Ödülü"},
-      {"logo": "tum", "alt": "Technische Universität München", "dt": "Değişim", "dd": "Technische Universität München", "sub": "· School of Management"},
-      {"logo": null, "dt": "Yayın", "dd": "Symptom normalization using unsupervised learning and text similarity", "sub": "· Kavak &amp; Özgür, BioCreative VIII"},
-      {"logo": null, "dt": "Sertifika", "dd": "Microsoft PL-300", "sub": "· Power BI Data Analyst"},
-      {"logo": null, "dt": "Stack", "dd": "Python · SQL · TypeScript", "sub": "· AWS · Databricks · GCP · Azure · Docker · Elastic · MLflow"},
-      {"logo": null, "dt": "Konum", "dd": "Berlin", "sub": "· AB ve ABD'deki ekiplerle uzaktan çalışıyorum"}
+      {
+        "logo": "bogazici",
+        "alt": "Boğaziçi Üniversitesi",
+        "dt": "Yüksek Lisans, Bilgisayar Müh.",
+        "dd": "Boğaziçi Üniversitesi",
+        "sub": "· 2020–2023"
+      },
+      {
+        "logo": "koc",
+        "alt": "Koç Üniversitesi",
+        "dt": "Lisans, Endüstri Müh. + Ekonomi",
+        "dd": "Koç Üniversitesi",
+        "sub": "· çift anadal · Vehbi Koç Onur Ödülü"
+      },
+      {
+        "logo": "tum",
+        "alt": "Technische Universität München",
+        "dt": "Değişim",
+        "dd": "Technische Universität München",
+        "sub": "· School of Management"
+      },
+      {
+        "logo": null,
+        "dt": "Yayın",
+        "dd": "Symptom normalization using unsupervised learning and text similarity",
+        "sub": "· Kavak &amp; Özgür, BioCreative VIII"
+      },
+      {
+        "logo": null,
+        "dt": "Sertifika",
+        "dd": "Microsoft PL-300",
+        "sub": "· Power BI Data Analyst"
+      },
+      {
+        "logo": null,
+        "dt": "Stack",
+        "dd": "Python · SQL · TypeScript",
+        "sub": "· AWS · Databricks · GCP · Azure · Docker · Elastic · MLflow"
+      },
+      {
+        "logo": null,
+        "dt": "Konum",
+        "dd": "Berlin",
+        "sub": "· AB ve ABD'deki ekiplerle uzaktan çalışıyorum"
+      }
     ]
   },
   "contact": {
     "label": "İletişim",
-    "h2": "Otomatikleştirmeye değer bir iş akışınız var mı?",
+    "h2": "Otomatikleştirmeye değer bir süreciniz var mı?",
     "lead": "Otomatikleştirmek istediğiniz süreci ya da kurmak istediğiniz asistanı anlatın. İki iş günü içinde uyum konusunda dürüst bir değerlendirmeyle dönerim.",
     "email_btn": "E-posta gönder",
     "subject": "Agentic AI danışmanlığı",
