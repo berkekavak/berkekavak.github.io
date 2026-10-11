@@ -14,6 +14,8 @@ import re
 ROOT = os.path.dirname(os.path.abspath(__file__))
 SITE = "https://berkekavak.com"
 EMAIL = "berkekavak@hotmail.com"
+BRAND = "Pappel AI"          # working name; swap here and rebuild
+FORM_ENDPOINT = ""           # e.g. a Formspree URL; empty = form falls back to mailto
 LANGS = {"en": "", "tr": "tr/", "de": "de/"}
 LANG_NAMES = {"en": "EN", "tr": "TR", "de": "DE"}
 
@@ -154,6 +156,37 @@ def render(c):
         for i, p in enumerate(ap["principles"])
     )
 
+    dg = hero["diagram"]
+    chips = lambda xs, cls="": "".join(f'<span class="dg-chip{(" " + cls) if cls else ""}">{x}</span>' for x in xs)
+    diagram = (
+        f'<figure class="diagram reveal" data-delay="2" aria-label="{dg["title"]}">'
+        f'<figcaption class="label">{dg["title"]}</figcaption>'
+        '<div class="dg-flow">'
+        f'<div class="dg-col">{chips(dg["inputs"])}</div>'
+        '<div class="dg-arrow" aria-hidden="true"></div>'
+        f'<div class="dg-agent"><b>{dg["agent"]}</b><small>{dg["agent_sub"]}</small><div class="dg-tools">{chips(dg["tools"], "soft")}</div></div>'
+        '<div class="dg-arrow" aria-hidden="true"></div>'
+        f'<div class="dg-col"><span class="dg-chip human">{dg["human"]}</span>{chips(dg["outputs"])}</div>'
+        "</div></figure>"
+    )
+
+    fm = ct["form"]
+    form_attrs = f'action="{FORM_ENDPOINT}" method="post" data-endpoint="{FORM_ENDPOINT}"' if FORM_ENDPOINT else 'action="#" method="post"'
+    form = f"""<form class="cform reveal" data-delay="2" id="contact-form" {form_attrs} data-mailto="{EMAIL}" data-subject="{ct["subject"]}" data-sent="{fm["sent"]}" novalidate>
+        <div class="row-2">
+          <label><span>{fm["name"]}</span><input type="text" name="name" autocomplete="name" required></label>
+          <label><span>{fm["email"]}</span><input type="email" name="email" autocomplete="email" required></label>
+        </div>
+        <label><span>{fm["company"]}</span><input type="text" name="company" autocomplete="organization"></label>
+        <label><span>{fm["message"]}</span><textarea name="message" rows="5" placeholder="{fm["message_placeholder"]}" required></textarea></label>
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+        <div class="cform-foot">
+          <button class="btn btn-primary" type="submit">{fm["submit"]}</button>
+          <p class="fine">{fm["privacy"].replace("{root}", r)}</p>
+        </div>
+        <p class="cform-sent" hidden>{fm["sent"]}</p>
+      </form>"""
+
     bio = "".join(f"<p>{p}</p>" for p in ab["bio"])
     facts = ""
     for f in ab["facts"]:
@@ -197,7 +230,7 @@ def render(c):
 
 <nav class="nav" id="nav" aria-label="{a["nav"]}">
   <div class="wrap">
-    <a class="brand" href="#top"><span class="dot" aria-hidden="true"></span>Berke Kavak</a>
+    <a class="brand" href="#top"><span class="dot" aria-hidden="true"></span>{BRAND}</a>
     <div class="nav-links">{nav_links}</div>
     <a class="btn btn-primary nav-cta" href="#contact">{nav["cta"]}</a>
     {lang_switch}
@@ -223,12 +256,17 @@ def render(c):
 <main id="main">
   <header class="hero" id="top">
     <div class="wrap">
-      <p class="label reveal">{hero["label"]}</p>
-      <h1 class="display reveal" data-delay="1">{hero["h1"]}</h1>
-      <p class="lead reveal" data-delay="2">{hero["lead"]}</p>
-      <div class="hero-actions reveal" data-delay="3">
-        <a class="btn btn-primary" href="#contact">{hero["cta"]}</a>
-        <a class="btn btn-ghost" href="#work">{hero["cta2"]} <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a>
+      <div class="hero-grid">
+        <div>
+          <p class="label reveal">{hero["label"]}</p>
+          <h1 class="display reveal" data-delay="1">{hero["h1"]}</h1>
+          <p class="lead reveal" data-delay="2">{hero["lead"]}</p>
+          <div class="hero-actions reveal" data-delay="3">
+            <a class="btn btn-primary" href="#contact">{hero["cta"]}</a>
+            <a class="btn btn-ghost" href="#work">{hero["cta2"]} <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a>
+          </div>
+        </div>
+        {diagram}
       </div>
       <div class="hero-meta reveal" data-delay="3">{hero_meta}</div>
     </div>
@@ -289,9 +327,13 @@ def render(c):
         <p class="label reveal">{ab["label"]}</p>
         <h2 class="h2 reveal" data-delay="1">{ab["h2"]}</h2>
       </div>
+      <p class="lead about-intro reveal" data-delay="2">{ab["intro"]}</p>
       <div class="about">
         <div class="bio reveal">
-          <img class="portrait" src="{r}assets/berke-kavak.webp" alt="Berke Kavak" width="560" height="589">
+          <div class="founder">
+            <img class="portrait" src="{r}assets/berke-kavak.webp" alt="{ab["founder_name"]}" width="560" height="589">
+            <div><p class="label">{ab["founder_label"]}</p><p class="h3">{ab["founder_name"]}</p></div>
+          </div>
           {bio}
         </div>
         <dl class="facts reveal" data-delay="1">{facts}</dl>
@@ -303,13 +345,17 @@ def render(c):
     <div class="wrap">
       <p class="label reveal">{ct["label"]}</p>
       <h2 class="display reveal" data-delay="1">{ct["h2"]}</h2>
-      <p class="lead reveal" data-delay="2">{ct["lead"]}</p>
-      <div class="actions reveal" data-delay="3">
-        <a class="btn btn-primary" href="mailto:{EMAIL}?subject={subject}">{ct["email_btn"]}</a>
-        <a class="btn btn-ghost" href="https://www.linkedin.com/in/berke-kavak/" rel="noopener">LinkedIn</a>
-        <a class="btn btn-ghost" href="https://github.com/berkekavak" rel="noopener">GitHub</a>
+      <div class="contact-grid">
+        <div>
+          <p class="lead reveal" data-delay="2">{ct["lead"]}</p>
+          <p class="email reveal" data-delay="3">{ct["direct"]} <a href="mailto:{EMAIL}?subject={subject}">{EMAIL}</a></p>
+          <div class="actions reveal" data-delay="3">
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/berke-kavak/" rel="noopener">LinkedIn</a>
+            <a class="btn btn-ghost" href="https://github.com/berkekavak" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        {form}
       </div>
-      <p class="email reveal" data-delay="3">{ct["direct"]} <a href="mailto:{EMAIL}">{EMAIL}</a></p>
     </div>
   </section>
 </main>
@@ -317,6 +363,8 @@ def render(c):
 <footer>
   <div class="wrap">
     <span>{ft["copy"]}</span>
+    <a href="{r}impressum/">{ft["imprint"]}</a>
+    <a href="{r}datenschutz/">{ft["privacy"]}</a>
     <span class="visits mono" id="visits" hidden><b id="visit-num"></b> {ft["visits"]}</span>
     <a class="up" href="#top">{ft["top"]}</a>
   </div>
@@ -329,17 +377,106 @@ def render(c):
 """
 
 
+def render_legal(slug, title, body_html):
+    """Standalone legal page (German, as required for a German business)."""
+    r = "../"
+    return f"""<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>{title} · {BRAND}</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="{SITE}/{slug}/">
+<script>
+(function(){{try{{var t=localStorage.getItem('theme');if(t==='dark'||t==='light'){{document.documentElement.setAttribute('data-theme',t);}}}}catch(e){{}}}})();
+</script>
+<link rel="stylesheet" href="{r}assets/site.css">
+</head>
+<body>
+<nav class="nav" id="nav" aria-label="Hauptnavigation">
+  <div class="wrap">
+    <a class="brand" href="{r}"><span class="dot" aria-hidden="true"></span>{BRAND}</a>
+    <div class="nav-links" style="margin-left:auto"><a href="{r}">Startseite</a><a href="{r}impressum/">Impressum</a><a href="{r}datenschutz/">Datenschutz</a></div>
+  </div>
+</nav>
+<main id="main">
+  <section class="legal">
+    <div class="wrap">
+      <h1 class="h2">{title}</h1>
+      {body_html}
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <span>© 2026 {BRAND} · Berlin</span>
+    <a href="{r}impressum/">Impressum</a>
+    <a href="{r}datenschutz/">Datenschutz</a>
+    <a class="up" href="{r}">Zur Startseite</a>
+  </div>
+</footer>
+</body>
+</html>
+"""
+
+
+IMPRESSUM = """
+<p class="fine">Angaben gemäß § 5 DDG. Platzhalter in eckigen Klammern vor Veröffentlichung ausfüllen.</p>
+<h2 class="h3">Anbieter</h2>
+<p>Berke Kavak<br>{brand}<br>[Straße und Hausnummer]<br>[PLZ] Berlin<br>Deutschland</p>
+<h2 class="h3">Kontakt</h2>
+<p>E-Mail: <a href="mailto:{email}">{email}</a><br>Telefon: [optional]</p>
+<h2 class="h3">Umsatzsteuer</h2>
+<p>Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG: [DE…] <em>oder</em> Kleinunternehmer gemäß § 19 UStG, daher keine Ausweisung der Umsatzsteuer.</p>
+<h2 class="h3">Verantwortlich für den Inhalt</h2>
+<p>Berke Kavak, Anschrift wie oben.</p>
+<h2 class="h3">Streitbeilegung</h2>
+<p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+<h2 class="h3">Haftung für Inhalte und Links</h2>
+<p>Die Inhalte dieser Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte übernehmen wir jedoch keine Gewähr. Für die Inhalte verlinkter externer Seiten ist stets der jeweilige Anbieter verantwortlich.</p>
+<h2 class="h3">Markenhinweis</h2>
+<p>Die auf dieser Website gezeigten Logos und Marken (u. a. adidas, ESN, More Nutrition, PEMCO, Davies, İş Yatırım, Sompo, Philips) sind Eigentum der jeweiligen Inhaber und dienen ausschließlich der Darstellung der Projekterfahrung. Es besteht keine Partnerschaft oder Empfehlung.</p>
+"""
+
+DATENSCHUTZ = """
+<p class="fine">Stand: Oktober 2026. Platzhalter in eckigen Klammern vor Veröffentlichung ausfüllen.</p>
+<h2 class="h3">1. Verantwortlicher</h2>
+<p>Berke Kavak, {brand}, [Straße und Hausnummer], [PLZ] Berlin, E-Mail: <a href="mailto:{email}">{email}</a>.</p>
+<h2 class="h3">2. Hosting</h2>
+<p>Diese Website wird bei GitHub Pages gehostet (GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA). Beim Aufruf der Seiten verarbeitet GitHub technisch notwendige Daten wie IP-Adresse, Zeitpunkt des Zugriffs, aufgerufene Seite, Browser und Betriebssystem in Server-Logs. Rechtsgrundlage ist unser berechtigtes Interesse an einem sicheren und stabilen Betrieb der Website (Art. 6 Abs. 1 lit. f DSGVO). GitHub ist unter dem EU-US Data Privacy Framework zertifiziert. Weitere Informationen: <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub Privacy Statement</a>.</p>
+<h2 class="h3">3. Reichweitenmessung</h2>
+<p>Wir nutzen GoatCounter, ein datenschutzfreundliches Open-Source-Analysewerkzeug. GoatCounter setzt keine Cookies und speichert keine personenbezogenen Daten; die IP-Adresse wird nicht gespeichert, sondern nur kurzfristig in gehashter Form zur Zählung eindeutiger Besuche verwendet. Erfasst werden aufgerufene Seite, Referrer, Bildschirmgröße, Browser und Land. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO. Weitere Informationen: <a href="https://www.goatcounter.com/help/privacy" rel="noopener">GoatCounter Privacy</a>.</p>
+<h2 class="h3">4. Kontaktformular und E-Mail</h2>
+<p>Wenn Sie uns über das Kontaktformular oder per E-Mail kontaktieren, verarbeiten wir die von Ihnen angegebenen Daten (Name, E-Mail-Adresse, Unternehmen, Nachricht) zur Bearbeitung Ihrer Anfrage. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (Anbahnung eines Vertrags) bzw. Art. 6 Abs. 1 lit. f DSGVO. Das Formular öffnet Ihr E-Mail-Programm mit den eingegebenen Daten; eine Speicherung auf unserem Webserver findet nicht statt. [Falls ein Formulardienst wie Formspree genutzt wird: Anbieter, Sitz und Datenschutzhinweis hier ergänzen.] Die Daten werden gelöscht, sobald sie für die Bearbeitung nicht mehr erforderlich sind und keine gesetzlichen Aufbewahrungspflichten entgegenstehen.</p>
+<h2 class="h3">5. Lokale Speicherung</h2>
+<p>Die Website speichert Ihre Auswahl des Farbschemas (hell/dunkel) im Local Storage Ihres Browsers. Dabei werden keine personenbezogenen Daten verarbeitet und keine Daten an uns übertragen.</p>
+<h2 class="h3">6. Externe Links</h2>
+<p>Diese Website verlinkt auf LinkedIn und GitHub. Beim Anklicken gelten die Datenschutzbestimmungen des jeweiligen Anbieters.</p>
+<h2 class="h3">7. Ihre Rechte</h2>
+<p>Sie haben das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch (Art. 21). Außerdem haben Sie das Recht, sich bei einer Aufsichtsbehörde zu beschweren, z. B. bei der Berliner Beauftragten für Datenschutz und Informationsfreiheit.</p>
+"""
+
+
 def main():
     for lang, path in LANGS.items():
         c = json.load(open(os.path.join(ROOT, "content", lang + ".json"), encoding="utf-8"))
         assert c["lang"] == lang
-        html = render(c)
+        html = render(c).replace("{brand}", BRAND)
         html = re.sub(r"\n{3,}", "\n\n", html)
         out = os.path.join(ROOT, path, "index.html")
         os.makedirs(os.path.dirname(out), exist_ok=True)
         with open(out, "w", encoding="utf-8", newline="\n") as f:
             f.write(html)
         print(f"{out.replace(ROOT + os.sep, '')}: {len(html.encode('utf-8'))} bytes")
+    for slug, title, body in (("impressum", "Impressum", IMPRESSUM), ("datenschutz", "Datenschutzerklärung", DATENSCHUTZ)):
+        html = render_legal(slug, title, body.replace("{brand}", BRAND).replace("{email}", EMAIL))
+        out = os.path.join(ROOT, slug, "index.html")
+        os.makedirs(os.path.dirname(out), exist_ok=True)
+        with open(out, "w", encoding="utf-8", newline="\n") as f:
+            f.write(html)
+        print(f"{slug}/index.html: {len(html.encode('utf-8'))} bytes")
 
 
 if __name__ == "__main__":

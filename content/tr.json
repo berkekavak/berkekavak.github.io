@@ -1,10 +1,10 @@
 {
   "lang": "tr",
   "locale": "tr_TR",
-  "title": "Berke Kavak · Agentic AI Danışmanlığı, Berlin",
-  "description": "Berke Kavak'tan agentic AI danışmanlığı, Berlin: İşiniz için AI ajanları, asistanlar ve otomasyon akışları. Open source öncelikli; Claude, GPT, Gemini ya da açık ağırlıklı modellerle, kendi bulutunuzda. Arkasında adidas, Philips, Sompo, PEMCO ve Davies için altı yıllık üretim ML deneyimi.",
-  "og_title": "Berke Kavak · Agentic AI Danışmanlığı",
-  "og_description": "Üretime çıkan ve orada kalan AI ajanları ve otomasyon akışları. Open source öncelikli, tercih ettiğiniz modelle, kendi bulutunuzda.",
+  "title": "{brand} · Agentic AI Danışmanlığı, Berlin",
+  "description": "{brand}, Berlin merkezli bir agentic AI danışmanlığıdır. Orta ölçekli şirketler için AI ajanları, asistanlar ve otomasyon akışları tasarlıyor, kuruyor ve işletiyoruz. Open source öncelikli; Claude, GPT, Gemini ya da açık ağırlıklı modellerle, kendi bulutunuzda.",
+  "og_title": "{brand} · Agentic AI Danışmanlığı",
+  "og_description": "Üretime çıkan ve orada kalan AI ajanları ve otomasyon akışları. Open source öncelikli, model tercihe bağlı, kendi bulutunuzda.",
   "a11y": {
     "skip": "İçeriğe geç",
     "nav": "Ana menü",
@@ -18,19 +18,19 @@
     "services": "Hizmetler",
     "work": "Projeler",
     "approach": "Yaklaşım",
-    "about": "Hakkımda",
-    "cta": "Görüşelim"
+    "about": "Hakkımızda",
+    "cta": "Tanışma görüşmesi"
   },
   "hero": {
     "label": "Agentic AI Danışmanlığı · Berlin",
     "h1": "Üretime çıkan ve orada kalan AI ajanları.",
-    "lead": "İşiniz için AI ajanları, asistanlar ve etraflarındaki otomasyon akışlarını kuruyorum. Open source öncelikli; Claude, GPT, Gemini ya da açık ağırlıklı modeller, tercih sizin. Kendi bulutunuzda çalışır, ekibinize aittir.",
-    "cta": "Görüşelim",
+    "lead": "{brand}, AI ajanları, asistanlar ve etraflarındaki otomasyon akışlarını tasarlar, kurar ve işletir. Open source öncelikli; Claude, GPT, Gemini ya da açık ağırlıklı modellerle. Kendi bulutunuzda yayınlanır, ekibinize devredilir.",
+    "cta": "Tanışma görüşmesi",
     "cta2": "Projelere bak",
     "meta": [
       {
         "b": "6+ yıl",
-        "s": "üretimde ML ve GenAI"
+        "s": "üretimde ML ve GenAI teslimatı"
       },
       {
         "b": "Open source öncelikli",
@@ -40,17 +40,38 @@
         "b": "Sizin bulutunuz",
         "s": "AWS · Databricks · GCP · Azure · on-premise"
       }
-    ]
+    ],
+    "diagram": {
+      "title": "Bir ajan işinizde nasıl çalışır",
+      "inputs": [
+        "E-posta",
+        "Belgeler",
+        "CRM · ERP"
+      ],
+      "agent": "Ajan",
+      "agent_sub": "tercih ettiğiniz model",
+      "tools": [
+        "Retrieval",
+        "Araçlar ve API'ler",
+        "Kontroller"
+      ],
+      "human": "İnsan onayı",
+      "outputs": [
+        "Ticket",
+        "Rapor",
+        "Aksiyon"
+      ]
+    }
   },
-  "logos_label": "Proje yaptığım markalar",
+  "logos_label": "Deneyim: proje teslim ettiğimiz markalar",
   "services": {
     "label": "Hizmetler",
-    "h2": "Kurduğum üç şey.",
+    "h2": "Kurduğumuz üç şey.",
     "lead": "Ajanlar, etraflarındaki otomasyon ve üzerinde çalıştıkları veri. Open source öncelikli, tercih ettiğiniz modelle.",
     "items": [
       {
         "title": "AI ajanları ve asistanlar",
-        "p": "Belgelerinizden yanıt veren asistanlar, araçlarınızı kullanıp çok adımlı işleri tamamlayan ajanlar. Gerektiği yerde insan döngüde kalır.",
+        "p": "Belgelerinizden yanıt veren asistanlar ve araçlarınızı kullanarak çok adımlı işleri tamamlayan ajanlar. Gerektiği yerde insan döngüde kalır.",
         "chips": [
           "RAG asistanları",
           "Araç kullanan ajanlar",
@@ -80,7 +101,7 @@
       }
     ],
     "stack": {
-      "label": "Nasıl kuruyorum",
+      "label": "Nasıl kuruyoruz",
       "h3": "Open source öncelikli. Model tercihe bağlı.",
       "p": "Lisans bağımlılığı yok: kod sizin, modeli sonradan değiştirebilirsiniz. Ortamınızdan dışarı hiçbir şey çıkmaz.",
       "rows": [
@@ -102,7 +123,7 @@
   "work": {
     "label": "Projeler",
     "h2": "İş sonuçlarıyla ölçülür.",
-    "lead": "Önce ajanlar ve GenAI, sonra arkasındaki üretim ML'i. Her biri değerlendirildiği sonuçla birlikte.",
+    "lead": "Önce ajan ve GenAI projeleri, sonra arkasındaki üretim ML'i. Her biri değerlendirildiği sonuçla birlikte.",
     "group1": "Agentic ve GenAI",
     "group2": "Üretim ML ve veri",
     "nda_tag": "NDA kapsamında",
@@ -179,14 +200,14 @@
         "logo": null,
         "sector": "Ve dahası",
         "p": "ABD ve Avrupa müşterileri için Spark ve MLflow üzerinde elde tutma, NLP ve klinik modeller; on-premise ile SageMaker, GCP ve Azure'da yayınlandı.",
-        "link": "Benzer bir problemi sorun →"
+        "link": "Benzer bir problemi konuşalım →"
       }
     ]
   },
   "approach": {
     "label": "Yaklaşım",
     "h2": "Erken prototip. Sizin stack'inizde yayın. Devir teslim.",
-    "lead": "Çalışan bir ajan bin slayttan değerlidir. Hızla ona ulaşırım, sonra üretimde çalışacak kadar sıkıcı hale getiririm.",
+    "lead": "Çalışan bir ajan bir sunumdan daha değerlidir. Hızla ona ulaşır, sonra bizsiz üretimde çalışacak kadar güvenilir hale getiririz.",
     "steps": [
       {
         "label": "01 · Keşif",
@@ -196,17 +217,17 @@
       {
         "label": "02 · Prototip",
         "title": "Gerçek işte kanıtla",
-        "p": "Haftalar içinde gerçek belgeleriniz ve araçlarınız üzerinde çalışan bir ajan. Devam kararını sunumla değil kanıtla verin."
+        "p": "Haftalar içinde gerçek belgeleriniz ve araçlarınız üzerinde çalışan bir ajan. Devam kararı sunuma değil kanıta dayanır."
       },
       {
         "label": "03 · Yayın",
         "title": "Güvenilir hale getir",
-        "p": "Değerlendirme, guardrail'ler, izleme ve maliyet kontrolü. Kendi bulutunuzda, ekibin zaten kullandığı araçlara bağlı."
+        "p": "Değerlendirme, guardrail'ler, izleme ve maliyet kontrolü. Kendi bulutunuzda, ekibinizin zaten kullandığı araçlarla entegre."
       },
       {
         "label": "04 · Devir teslim",
         "title": "Sistem ekibinizin",
-        "p": "Dokümantasyon, eğitim ve temiz bir devir. Hedef, bensiz işlettiğiniz bir sistem ve tekrar aramak için bir neden."
+        "p": "Dokümantasyon, eğitim ve temiz bir devir. Hedef, ekibinizin bağımsız işlettiği bir sistem."
       }
     ],
     "principles": [
@@ -225,13 +246,15 @@
     ]
   },
   "about": {
-    "label": "Hakkımda",
-    "h2": "Uygulamalı araştırma, teslimatla ölçülür.",
+    "label": "Hakkımızda",
+    "h2": "Kıdemli teslimat, fazladan yük olmadan.",
+    "intro": "{brand}, Berke Kavak liderliğinde bağımsız bir Berlin stüdyosudur. Her proje, altı yıldır ML ve GenAI sistemlerini üretime çıkaran kıdemli bir uygulayıcı tarafından teslim edilir; satış görüşmesinden sonra genç bir ekibe devredilmez.",
+    "founder_label": "Kurucu",
+    "founder_name": "Berke Kavak",
     "bio": [
-      "Ben Berke; Berlin'de yaşayan, agentic sistemlere odaklanmış bir AI danışmanıyım. <strong>Uygulamalı araştırma ile teslimatın</strong> kesişiminde çalışıyorum: makaleyi okumaktan çekinmem, ama sistemin üretimde çalışıp bir iş metriğini oynatmasıyla değerlendirilirim.",
-      "2023'ten beri BeeBI Consulting'de AB ve ABD müşterileri için AI ve GenAI portföyünü yürütüyorum; eş zamanlı beş müşteride satış öncesinden yayın sonrasına kadar. Öncesinde TAZI AI'da erken dönem ekip üyesi olarak <strong>4 kat büyüme ve 4,6 milyon $'lık yatırım turu</strong> sürecinde yer aldım; AI çözümlerini tekrarlanabilir ürünlere dönüştürdüm, ABD ve Avrupa müşterileri için elde tutma, NLP ve klinik modeller yayınladım.",
-      "Boğaziçi Üniversitesi'ndeki yüksek lisans araştırmam, LLM'lerle biyomedikal varlık normalizasyonu üzerineydi ve <strong>BioCreative VIII SympTEMIST</strong> kapsamında yayımlandı. Koç Üniversitesi'nde endüstri mühendisliği ve ekonomi çift anadalı, ML problemlerine önce iş problemi olarak bakmayı öğretti.",
-      "İngilizce ve Türkçe çalışıyorum, iyi derecede Almanca biliyorum."
+      "Berke, 2023'ten beri BeeBI Consulting'de AB ve ABD müşterileri için AI ve GenAI portföyünü yürütüyor; eş zamanlı beş müşteride satış öncesinden yayın sonrasına kadar. Öncesinde TAZI AI'da erken dönem ekip üyesi olarak <strong>4 kat büyüme ve 4,6 milyon $'lık yatırım turu</strong> sürecinde yer aldı; AI çözümlerini tekrarlanabilir ürünlere dönüştürdü, ABD ve Avrupa müşterileri için elde tutma, NLP ve klinik modeller yayınladı.",
+      "Boğaziçi Üniversitesi'ndeki yüksek lisans araştırması, LLM'lerle biyomedikal varlık normalizasyonu üzerineydi ve <strong>BioCreative VIII SympTEMIST</strong> kapsamında yayımlandı. Koç Üniversitesi'nde endüstri mühendisliği ve ekonomi çift anadal mezunudur.",
+      "İngilizce, Türkçe ve Almanca çalışıyoruz."
     ],
     "facts": [
       {
@@ -277,21 +300,33 @@
         "logo": null,
         "dt": "Konum",
         "dd": "Berlin",
-        "sub": "· AB ve ABD'deki ekiplerle uzaktan çalışıyorum"
+        "sub": "· AB ve ABD'deki ekiplerle uzaktan çalışıyoruz"
       }
     ]
   },
   "contact": {
     "label": "İletişim",
     "h2": "Otomatikleştirmeye değer bir süreciniz var mı?",
-    "lead": "Otomatikleştirmek istediğiniz süreci ya da kurmak istediğiniz asistanı anlatın. İki iş günü içinde uyum konusunda dürüst bir değerlendirmeyle dönerim.",
+    "lead": "Otomatikleştirmek istediğiniz süreci ya da kurmak istediğiniz asistanı anlatın. İki iş günü içinde uyum konusunda dürüst bir değerlendirmeyle döneriz; mantıklıysa 30 dakikalık bir tanışma görüşmesi öneririz.",
+    "form": {
+      "name": "Ad soyad",
+      "email": "İş e-postası",
+      "company": "Şirket",
+      "message": "Neyi otomatikleştirmek istiyorsunuz?",
+      "message_placeholder": "Süreç, dahil olan sistemler ve iyi bir sonucun nasıl görüneceği hakkında birkaç cümle.",
+      "submit": "Mesaj gönder",
+      "privacy": "Göndererek <a href=\"{root}datenschutz/\">gizlilik bildirimini</a> kabul etmiş olursunuz.",
+      "sent": "Teşekkürler. İki iş günü içinde size döneceğiz."
+    },
     "email_btn": "E-posta gönder",
     "subject": "Agentic AI danışmanlığı",
     "direct": "Ya da doğrudan yazın:"
   },
   "footer": {
-    "copy": "© 2026 Berke Kavak · Berlin",
+    "copy": "© 2026 {brand} · Berlin",
     "visits": "ziyaret",
-    "top": "Başa dön ↑"
+    "top": "Başa dön ↑",
+    "imprint": "Künye (Impressum)",
+    "privacy": "Gizlilik"
   }
 }

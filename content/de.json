@@ -1,10 +1,10 @@
 {
   "lang": "de",
   "locale": "de_DE",
-  "title": "Berke Kavak · Agentic-AI-Beratung, Berlin",
-  "description": "Agentic-AI-Beratung von Berke Kavak, Berlin: KI-Agenten, Assistenten und Automatisierungs-Flows für Ihr Unternehmen. Open Source zuerst, mit Claude, GPT, Gemini oder offenen Modellen, in Ihrer eigenen Cloud. Mit sechs Jahren Produktions-ML für adidas, Philips, Sompo, PEMCO und Davies.",
-  "og_title": "Berke Kavak · Agentic-AI-Beratung",
-  "og_description": "KI-Agenten und Automatisierungs-Flows, die in Produktion gehen und dort bleiben. Open Source zuerst, mit dem Modell Ihrer Wahl, in Ihrer eigenen Cloud.",
+  "title": "{brand} · Agentic-AI-Beratung, Berlin",
+  "description": "{brand} ist eine Berliner Beratung für agentische KI. Wir konzipieren, bauen und betreiben KI-Agenten, Assistenten und Automatisierungs-Flows für mittelständische Unternehmen. Open Source zuerst, mit Claude, GPT, Gemini oder offenen Modellen, in Ihrer eigenen Cloud.",
+  "og_title": "{brand} · Agentic-AI-Beratung",
+  "og_description": "KI-Agenten und Automatisierungs-Flows, die in Produktion gehen und dort bleiben. Open Source zuerst, Modell nach Wahl, in Ihrer eigenen Cloud.",
   "a11y": {
     "skip": "Zum Inhalt springen",
     "nav": "Hauptnavigation",
@@ -18,14 +18,14 @@
     "services": "Leistungen",
     "work": "Projekte",
     "approach": "Vorgehen",
-    "about": "Über mich",
-    "cta": "Gespräch starten"
+    "about": "Über uns",
+    "cta": "Kennenlerngespräch"
   },
   "hero": {
     "label": "Agentic-AI-Beratung · Berlin",
     "h1": "KI-Agenten, die in Produktion gehen. Und dort bleiben.",
-    "lead": "Ich baue KI-Agenten, Assistenten und die Automatisierungs-Flows drumherum für Ihr Unternehmen. Open Source zuerst, mit Claude, GPT, Gemini oder offenen Modellen, ganz nach Ihrer Wahl. Betrieben in Ihrer eigenen Cloud, im Besitz Ihres Teams.",
-    "cta": "Gespräch starten",
+    "lead": "{brand} konzipiert, baut und betreibt KI-Agenten, Assistenten und die Automatisierungs-Flows drumherum. Open Source zuerst, mit Claude, GPT, Gemini oder offenen Modellen. Betrieben in Ihrer eigenen Cloud und an Ihr Team übergeben.",
+    "cta": "Kennenlerngespräch buchen",
     "cta2": "Projekte ansehen",
     "meta": [
       {
@@ -40,17 +40,38 @@
         "b": "Ihre Cloud",
         "s": "AWS · Databricks · GCP · Azure · On-Premise"
       }
-    ]
+    ],
+    "diagram": {
+      "title": "So läuft ein Agent in Ihrem Unternehmen",
+      "inputs": [
+        "E-Mail",
+        "Dokumente",
+        "CRM · ERP"
+      ],
+      "agent": "Agent",
+      "agent_sub": "Modell Ihrer Wahl",
+      "tools": [
+        "Retrieval",
+        "Tools &amp; APIs",
+        "Prüfungen"
+      ],
+      "human": "Freigabe durch Menschen",
+      "outputs": [
+        "Ticket",
+        "Bericht",
+        "Aktion"
+      ]
+    }
   },
-  "logos_label": "Projekte umgesetzt für",
+  "logos_label": "Erfahrung aus Projekten für",
   "services": {
     "label": "Leistungen",
-    "h2": "Drei Dinge, die ich baue.",
+    "h2": "Drei Dinge, die wir bauen.",
     "lead": "Agenten, die Automatisierung drumherum und die Daten, auf denen sie laufen. Open Source zuerst, mit dem Modell Ihrer Wahl.",
     "items": [
       {
         "title": "KI-Agenten und Assistenten",
-        "p": "Assistenten, die aus Ihren Dokumenten antworten, und Agenten, die Ihre Tools nutzen und mehrstufige Aufgaben erledigen. Mit einem Menschen in der Schleife, wo es darauf ankommt.",
+        "p": "Assistenten, die aus Ihren Dokumenten antworten, und Agenten, die mit Ihren Tools mehrstufige Aufgaben erledigen. Mit einem Menschen in der Schleife, wo es darauf ankommt.",
         "chips": [
           "RAG-Assistenten",
           "Agenten mit Tool-Nutzung",
@@ -80,7 +101,7 @@
       }
     ],
     "stack": {
-      "label": "So baue ich",
+      "label": "So bauen wir",
       "h3": "Open Source zuerst. Modell nach Wahl.",
       "p": "Kein Lizenz-Lock-in: Der Code gehört Ihnen, das Modell lässt sich später austauschen. Nichts verlässt Ihre Umgebung.",
       "rows": [
@@ -102,7 +123,7 @@
   "work": {
     "label": "Projekte",
     "h2": "Gemessen an Geschäftsergebnissen.",
-    "lead": "Zuerst Agenten und GenAI, dann das Produktions-ML dahinter. Jeweils mit dem Ergebnis, an dem sie gemessen wurden.",
+    "lead": "Zuerst Agenten- und GenAI-Projekte, dann das Produktions-ML dahinter. Jeweils mit dem Ergebnis, an dem sie gemessen wurden.",
     "group1": "Agentic und GenAI",
     "group2": "Produktions-ML und Daten",
     "nda_tag": "Unter NDA",
@@ -186,12 +207,12 @@
   "approach": {
     "label": "Vorgehen",
     "h2": "Früh prototypen. Auf Ihrem Stack ausliefern. Übergeben.",
-    "lead": "Ein funktionierender Agent ist mehr wert als tausend Folien. Ich komme schnell dorthin und mache ihn dann so langweilig, dass er in Produktion läuft.",
+    "lead": "Ein funktionierender Agent ist mehr wert als eine Präsentation. Wir kommen schnell dorthin und machen ihn dann so zuverlässig, dass er ohne uns in Produktion läuft.",
     "steps": [
       {
         "label": "01 · Entdecken",
         "title": "Den Workflow finden",
-        "p": "Ein bis zwei Wochen in Ihrem Prozess und Ihren Daten. Wir wählen den Workflow, der sich zu automatisieren lohnt, die Erfolgsmetrik und die Stellen, an denen ein Mensch in der Schleife bleibt."
+        "p": "Ein bis zwei Wochen in Ihrem Prozess und Ihren Daten. Gemeinsam wählen wir den Workflow, der sich zu automatisieren lohnt, die Erfolgsmetrik und die Stellen, an denen ein Mensch in der Schleife bleibt."
       },
       {
         "label": "02 · Prototyp",
@@ -206,7 +227,7 @@
       {
         "label": "04 · Übergabe",
         "title": "Ihr Team übernimmt",
-        "p": "Dokumentation, Schulung und eine saubere Übergabe. Das Ziel ist ein System, das Sie ohne mich betreiben, und ein Grund, wieder anzurufen."
+        "p": "Dokumentation, Schulung und eine saubere Übergabe. Das Ziel ist ein System, das Ihr Team eigenständig betreibt."
       }
     ],
     "principles": [
@@ -225,13 +246,15 @@
     ]
   },
   "about": {
-    "label": "Über mich",
-    "h2": "Angewandte Forschung, gemessen an der Umsetzung.",
+    "label": "Über uns",
+    "h2": "Senior-Umsetzung, ohne Overhead.",
+    "intro": "{brand} ist ein unabhängiges Berliner Studio unter der Leitung von Berke Kavak. Jedes Projekt wird von einem erfahrenen Praktiker umgesetzt, der seit sechs Jahren ML- und GenAI-Systeme in Produktion bringt, und nicht nach dem Verkaufsgespräch an ein Junior-Team weitergereicht.",
+    "founder_label": "Gründer",
+    "founder_name": "Berke Kavak",
     "bio": [
-      "Ich bin Berke, KI-Berater in Berlin mit Fokus auf agentische Systeme. Ich arbeite an der Schnittstelle von <strong>angewandter Forschung und Umsetzung</strong>: Ich lese gern das Paper, gemessen werde ich aber daran, ob das System produktiv läuft und eine Geschäftskennzahl bewegt.",
-      "Seit 2023 verantworte ich bei BeeBI Consulting das AI- und GenAI-Portfolio für Kunden in der EU und den USA, vom Presales bis nach dem Go-live, bei fünf parallelen Kunden. Davor war ich frühes Teammitglied bei TAZI AI während <strong>4-fachem Wachstum und einer Finanzierungsrunde über 4,6 Mio. $</strong>, habe die KI-Lösungen zu wiederholbaren Angeboten gebündelt und Retention-, NLP- und klinische Modelle für Kunden in den USA und Europa ausgeliefert.",
-      "Meine Masterforschung an der Boğaziçi-Universität zur biomedizinischen Entitätsnormalisierung mit LLMs wurde im <strong>BioCreative VIII SympTEMIST Track</strong> veröffentlicht. Ein Doppelstudium in Wirtschaftsingenieurwesen und Volkswirtschaft an der Koç-Universität hat mich gelehrt, ML-Probleme zuerst als Geschäftsprobleme zu betrachten.",
-      "Ich arbeite auf Englisch und Türkisch und spreche gut Deutsch."
+      "Berke verantwortet seit 2023 bei BeeBI Consulting das AI- und GenAI-Portfolio für Kunden in der EU und den USA, vom Presales bis nach dem Go-live, bei fünf parallelen Kunden. Davor war er frühes Teammitglied bei TAZI AI während <strong>4-fachem Wachstum und einer Finanzierungsrunde über 4,6 Mio. $</strong>, hat die KI-Lösungen zu wiederholbaren Angeboten gebündelt und Retention-, NLP- und klinische Modelle für Kunden in den USA und Europa ausgeliefert.",
+      "Seine Masterforschung an der Boğaziçi-Universität zur biomedizinischen Entitätsnormalisierung mit LLMs wurde im <strong>BioCreative VIII SympTEMIST Track</strong> veröffentlicht. Er hat ein Doppelstudium in Wirtschaftsingenieurwesen und Volkswirtschaft an der Koç-Universität abgeschlossen.",
+      "Wir arbeiten auf Deutsch, Englisch und Türkisch."
     ],
     "facts": [
       {
@@ -284,14 +307,26 @@
   "contact": {
     "label": "Kontakt",
     "h2": "Haben Sie einen Prozess, der sich zu automatisieren lohnt?",
-    "lead": "Erzählen Sie mir vom Prozess, den Sie automatisieren, oder vom Assistenten, den Sie bauen möchten. Ich antworte innerhalb von zwei Werktagen mit einer ehrlichen Einschätzung, ob es passt.",
+    "lead": "Erzählen Sie uns vom Prozess, den Sie automatisieren, oder vom Assistenten, den Sie bauen möchten. Wir antworten innerhalb von zwei Werktagen mit einer ehrlichen Einschätzung, ob es passt, und schlagen bei Bedarf ein 30-minütiges Kennenlerngespräch vor.",
+    "form": {
+      "name": "Name",
+      "email": "Geschäftliche E-Mail",
+      "company": "Unternehmen",
+      "message": "Was möchten Sie automatisieren?",
+      "message_placeholder": "Ein paar Sätze zum Prozess, den beteiligten Systemen und dazu, wie ein gutes Ergebnis aussähe.",
+      "submit": "Nachricht senden",
+      "privacy": "Mit dem Absenden stimmen Sie der <a href=\"{root}datenschutz/\">Datenschutzerklärung</a> zu.",
+      "sent": "Vielen Dank. Wir melden uns innerhalb von zwei Werktagen."
+    },
     "email_btn": "E-Mail schreiben",
     "subject": "Anfrage Agentic AI",
     "direct": "Oder direkt schreiben:"
   },
   "footer": {
-    "copy": "© 2026 Berke Kavak · Berlin",
+    "copy": "© 2026 {brand} · Berlin",
     "visits": "Besuche",
-    "top": "Nach oben ↑"
+    "top": "Nach oben ↑",
+    "imprint": "Impressum",
+    "privacy": "Datenschutz"
   }
 }

@@ -1,10 +1,10 @@
 {
   "lang": "en",
   "locale": "en_US",
-  "title": "Berke Kavak · Agentic AI Consulting, Berlin",
-  "description": "Agentic AI consulting by Berke Kavak, Berlin: AI agents, assistants and automation flows for your business, built open source first with Claude, GPT, Gemini or open-weight models, running on your own cloud. Backed by six years of production ML for adidas, Philips, Sompo, PEMCO and Davies.",
-  "og_title": "Berke Kavak · Agentic AI Consulting",
-  "og_description": "AI agents and automation flows that ship, and stay, in production. Open source first, with the model of your choice, on your own cloud.",
+  "title": "{brand} · Agentic AI Consulting, Berlin",
+  "description": "{brand} is a Berlin-based agentic AI consultancy. We design, build and run AI agents, assistants and automation flows for mid-sized companies, open source first, with Claude, GPT, Gemini or open-weight models, on your own cloud.",
+  "og_title": "{brand} · Agentic AI Consulting",
+  "og_description": "AI agents and automation flows that ship, and stay, in production. Open source first, model of your choice, on your own cloud.",
   "a11y": {
     "skip": "Skip to content",
     "nav": "Primary",
@@ -16,21 +16,21 @@
   },
   "nav": {
     "services": "Services",
-    "work": "Selected work",
+    "work": "Work",
     "approach": "Approach",
     "about": "About",
-    "cta": "Start a conversation"
+    "cta": "Book an intro call"
   },
   "hero": {
     "label": "Agentic AI Consulting · Berlin",
     "h1": "AI agents that ship, and stay, in production.",
-    "lead": "I build AI agents, assistants and the automation flows around them for your business. Open source first, with Claude, GPT, Gemini or open-weight models, your choice. Running on your own cloud, owned by your team.",
-    "cta": "Start a conversation",
-    "cta2": "See selected work",
+    "lead": "{brand} designs, builds and runs AI agents, assistants and the automation flows around them. Open source first, with Claude, GPT, Gemini or open-weight models. Deployed on your own cloud and handed over to your team.",
+    "cta": "Book an intro call",
+    "cta2": "See our work",
     "meta": [
       {
         "b": "6+ years",
-        "s": "of production ML &amp; GenAI"
+        "s": "of production ML &amp; GenAI delivery"
       },
       {
         "b": "Open source first",
@@ -40,17 +40,38 @@
         "b": "Your cloud",
         "s": "AWS · Databricks · GCP · Azure · on-premise"
       }
-    ]
+    ],
+    "diagram": {
+      "title": "How an agent runs in your business",
+      "inputs": [
+        "Email",
+        "Documents",
+        "CRM · ERP"
+      ],
+      "agent": "Agent",
+      "agent_sub": "model of your choice",
+      "tools": [
+        "Retrieval",
+        "Tools &amp; APIs",
+        "Checks"
+      ],
+      "human": "Human review",
+      "outputs": [
+        "Ticket",
+        "Report",
+        "Action"
+      ]
+    }
   },
-  "logos_label": "Projects delivered for",
+  "logos_label": "Experience delivering for",
   "services": {
     "label": "Services",
-    "h2": "Three things I build.",
+    "h2": "Three things we build.",
     "lead": "Agents, the automation around them, and the data they run on. Open source first, with the model you prefer.",
     "items": [
       {
         "title": "AI agents &amp; assistants",
-        "p": "Assistants that answer from your documents, agents that use your tools and complete multi-step work, with a human in the loop where it matters.",
+        "p": "Assistants that answer from your documents, and agents that use your tools to complete multi-step work, with a human in the loop where it matters.",
         "chips": [
           "RAG assistants",
           "Tool-using agents",
@@ -80,7 +101,7 @@
       }
     ],
     "stack": {
-      "label": "How I build",
+      "label": "How we build",
       "h3": "Open source first. Model of your choice.",
       "p": "No license lock-in: you own the code and can swap the model later. Nothing leaves your environment.",
       "rows": [
@@ -100,9 +121,9 @@
     }
   },
   "work": {
-    "label": "Selected work",
+    "label": "Work",
     "h2": "Measured in business outcomes.",
-    "lead": "Agents and GenAI first, then the production ML behind them. Each with the result it was judged on.",
+    "lead": "Agent and GenAI projects first, then the production ML behind them. Each with the result it was judged on.",
     "group1": "Agentic &amp; GenAI",
     "group2": "Production ML &amp; data",
     "nda_tag": "Under NDA",
@@ -179,34 +200,34 @@
         "logo": null,
         "sector": "And more",
         "p": "Retention, NLP and clinical models for US and European clients on Spark and MLflow, deployed on-premise and on SageMaker, GCP and Azure.",
-        "link": "Ask about a similar problem →"
+        "link": "Discuss a similar problem →"
       }
     ]
   },
   "approach": {
     "label": "Approach",
     "h2": "Prototype early. Ship on your stack. Hand it over.",
-    "lead": "A working agent is worth a thousand slides. I get to one fast, then make it boring enough to run in production.",
+    "lead": "A working agent is worth more than a slide deck. We get to one quickly, then make it reliable enough to run in production without us.",
     "steps": [
       {
         "label": "01 · Discover",
         "title": "Find the workflow",
-        "p": "One to two weeks on your process and data. We pick the workflow worth automating, the success metric, and where a human stays in the loop."
+        "p": "One to two weeks on your process and data. Together we pick the workflow worth automating, the success metric, and where a human stays in the loop."
       },
       {
         "label": "02 · Prototype",
         "title": "Prove it on real work",
-        "p": "A working agent on your actual documents and tools within weeks. Decide to continue on evidence, not a deck."
+        "p": "A working agent on your actual documents and tools within weeks. The decision to continue is based on evidence, not a presentation."
       },
       {
         "label": "03 · Ship",
         "title": "Make it reliable",
-        "p": "Evaluation, guardrails, monitoring and cost control. Deployed on your cloud, wired into the tools people already use."
+        "p": "Evaluation, guardrails, monitoring and cost control. Deployed on your cloud and integrated with the tools your team already uses."
       },
       {
         "label": "04 · Hand over",
         "title": "Your team owns it",
-        "p": "Documentation, training and a clean handover. The goal is a system you run without me, and a reason to call again."
+        "p": "Documentation, training and a clean handover. The goal is a system your team runs independently."
       }
     ],
     "principles": [
@@ -226,12 +247,14 @@
   },
   "about": {
     "label": "About",
-    "h2": "Applied research, judged on delivery.",
+    "h2": "Senior delivery, without the overhead.",
+    "intro": "{brand} is an independent Berlin studio led by Berke Kavak. Every project is delivered by a senior practitioner who has shipped ML and GenAI systems into production for six years, not handed to a junior team after the sales call.",
+    "founder_label": "Founder",
+    "founder_name": "Berke Kavak",
     "bio": [
-      "I'm Berke, a Berlin-based AI consultant focused on agentic systems. I work at the intersection of <strong>applied research and delivery</strong>: comfortable reading the paper, but judged on whether the system runs in production and moves a business metric.",
-      "Since 2023 I have run the AI and GenAI portfolio at BeeBI Consulting for EU and US customers, from presales through post-deployment across five concurrent clients. Before that I was an early team member at TAZI AI through <strong>4× growth and a $4.6M round</strong>, packaging its AI solutions into repeatable offerings and shipping retention, NLP and clinical models for US and European clients.",
-      "My master's research at Boğaziçi University on biomedical entity normalization with LLMs was published at the <strong>BioCreative VIII SympTEMIST track</strong>. An industrial engineering and economics double major at Koç University taught me to treat ML problems as business problems first.",
-      "I work in English and Turkish, and speak good German."
+      "Berke has run the AI and GenAI portfolio at BeeBI Consulting for EU and US customers since 2023, from presales through post-deployment across five concurrent clients. Before that he was an early team member at TAZI AI through <strong>4× growth and a $4.6M round</strong>, packaging its AI solutions into repeatable offerings and shipping retention, NLP and clinical models for US and European clients.",
+      "His master's research at Boğaziçi University on biomedical entity normalization with LLMs was published at the <strong>BioCreative VIII SympTEMIST track</strong>. He holds a double major in industrial engineering and economics from Koç University.",
+      "We work in English, Turkish and German."
     ],
     "facts": [
       {
@@ -284,14 +307,26 @@
   "contact": {
     "label": "Contact",
     "h2": "Have a process worth automating?",
-    "lead": "Tell me about the process you want to automate or the assistant you want to build. I'll reply within two working days with an honest read on fit.",
-    "email_btn": "Email me",
+    "lead": "Tell us about the process you want to automate or the assistant you want to build. We reply within two working days with an honest read on fit, and a 30-minute intro call if it makes sense.",
+    "form": {
+      "name": "Name",
+      "email": "Work email",
+      "company": "Company",
+      "message": "What would you like to automate?",
+      "message_placeholder": "A few sentences about the process, the systems involved and what good would look like.",
+      "submit": "Send message",
+      "privacy": "By sending, you agree to the <a href=\"{root}datenschutz/\">privacy notice</a>.",
+      "sent": "Thanks. We will get back to you within two working days."
+    },
+    "email_btn": "Email us",
     "subject": "Agentic AI inquiry",
     "direct": "Or write directly:"
   },
   "footer": {
-    "copy": "© 2026 Berke Kavak · Berlin",
+    "copy": "© 2026 {brand} · Berlin",
     "visits": "visits",
-    "top": "Back to top ↑"
+    "top": "Back to top ↑",
+    "imprint": "Imprint",
+    "privacy": "Privacy"
   }
 }

@@ -143,3 +143,33 @@
       .catch(function () {});
   }
 })();
+
+/* ------------------------------------------------------------------
+   Contact form. With a data-endpoint it posts JSON there; without one
+   it opens the visitor's mail client with the message prefilled, so
+   the form works on a static host with no backend.
+------------------------------------------------------------------ */
+(function () {
+  var form = document.getElementById('contact-form');
+  if (!form) return;
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (!form.checkValidity()) { form.reportValidity(); return; }
+    var fd = new FormData(form);
+    if (fd.get('_gotcha')) return;
+    var data = { name: fd.get('name'), email: fd.get('email'), company: fd.get('company'), message: fd.get('message') };
+    var endpoint = form.getAttribute('data-endpoint');
+    var done = function () { form.classList.add('is-sent'); form.querySelector('.cform-sent').hidden = false; };
+    if (endpoint) {
+      var btn = form.querySelector('button[type=submit]'); btn.disabled = true;
+      fetch(endpoint, { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(data) })
+        .then(function (r) { if (!r.ok) throw new Error(r.status); done(); })
+        .catch(function () { btn.disabled = false; alert('Could not send. Please email us directly.'); });
+      return;
+    }
+    var subject = form.getAttribute('data-subject') + ' · ' + (data.company || data.name);
+    var body = data.message + '\n\n' + data.name + (data.company ? ' · ' + data.company : '') + '\n' + data.email;
+    window.location.href = 'mailto:' + form.getAttribute('data-mailto') + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+    done();
+  });
+})();

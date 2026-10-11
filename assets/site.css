@@ -522,3 +522,91 @@ footer .up:hover { color: var(--fg); }
 .stack dd { margin: 0; font-size: 0.9375rem; color: var(--fg); }
 @media (max-width: 960px) { .grid-3 { grid-template-columns: 1fr; } }
 @media (max-width: 760px) { .stack { grid-template-columns: 1fr; } .stack dl > div { grid-template-columns: 90px minmax(0, 1fr); } }
+
+/* ------------------------------------------------------------------
+   Firm layout additions: hero grid with diagram, about intro and
+   founder card, contact form, legal pages.
+------------------------------------------------------------------ */
+.hero-grid { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: clamp(32px, 5vw, 64px); align-items: center; }
+.hero .hero-grid .display { max-width: 14ch; }
+
+.diagram {
+  margin: 0; padding: 22px 22px 24px;
+  border-radius: var(--radius); background: var(--bg-elev);
+  border: 1px solid var(--line);
+}
+.diagram figcaption { margin-bottom: 18px; }
+.dg-flow { display: grid; grid-template-columns: minmax(0, 1fr) 22px minmax(0, 1.5fr) 22px minmax(0, 1fr); gap: 10px; align-items: center; }
+.dg-col { display: flex; flex-direction: column; gap: 8px; }
+.dg-chip {
+  display: inline-flex; align-items: center; justify-content: center; text-align: center;
+  padding: 8px 10px; border-radius: 10px; font-size: 0.8125rem; font-weight: 500;
+  background: var(--bg); border: 1px solid var(--line); color: var(--fg); box-shadow: var(--shadow-sm);
+}
+.dg-chip.soft { background: color-mix(in srgb, var(--fg) 5%, transparent); border-color: transparent; box-shadow: none; color: var(--fg-2); font-size: 0.75rem; padding: 5px 8px; border-radius: 999px; }
+.dg-chip.human { background: var(--accent-soft); border-color: color-mix(in srgb, var(--accent) 30%, transparent); color: var(--fg); font-weight: 600; }
+.dg-agent {
+  padding: 16px 14px; border-radius: 14px; background: var(--fg); color: var(--bg); text-align: center;
+  display: flex; flex-direction: column; align-items: center; gap: 4px; box-shadow: var(--shadow-md);
+}
+.dg-agent b { font-size: 1rem; letter-spacing: -0.01em; }
+.dg-agent small { font-size: 0.75rem; color: color-mix(in srgb, var(--bg) 70%, var(--fg)); }
+.dg-agent .dg-tools { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; margin-top: 10px; }
+.dg-agent .dg-chip.soft { background: color-mix(in srgb, var(--bg) 14%, transparent); color: color-mix(in srgb, var(--bg) 85%, var(--fg)); }
+.dg-arrow { height: 2px; background: var(--line-strong); position: relative; }
+.dg-arrow::after { content: ""; position: absolute; right: -1px; top: -4px; width: 0; height: 0; border-left: 7px solid var(--line-strong); border-top: 5px solid transparent; border-bottom: 5px solid transparent; }
+
+.about-intro { max-width: 62ch; margin-bottom: clamp(32px, 5vw, 48px); }
+.founder { display: flex; align-items: center; gap: 18px; margin-bottom: 24px; }
+.founder .portrait { width: 96px; height: 96px; border-radius: 24px; margin: 0; flex: none; object-fit: cover; }
+.founder .label { margin-bottom: 4px; }
+
+.contact-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: clamp(32px, 5vw, 72px); align-items: start; margin-top: 8px; }
+.contact .actions { margin-top: 24px; }
+.cform { display: grid; gap: 14px; padding: clamp(20px, 3vw, 28px); border-radius: var(--radius); background: color-mix(in srgb, var(--bg) 8%, transparent); border: 1px solid color-mix(in srgb, var(--bg) 16%, transparent); position: relative; }
+.cform .row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.cform label { display: grid; gap: 6px; }
+.cform label span { font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.02em; color: color-mix(in srgb, var(--bg) 75%, var(--fg)); }
+.cform input, .cform textarea {
+  font: inherit; font-size: 1rem; color: var(--bg);
+  background: color-mix(in srgb, var(--bg) 10%, transparent);
+  border: 1px solid color-mix(in srgb, var(--bg) 25%, transparent);
+  border-radius: 12px; padding: 11px 14px; width: 100%; min-height: 44px;
+  transition: border-color 160ms ease, background-color 160ms ease;
+}
+.cform textarea { resize: vertical; min-height: 120px; }
+.cform input::placeholder, .cform textarea::placeholder { color: color-mix(in srgb, var(--bg) 45%, transparent); }
+.cform input:focus-visible, .cform textarea:focus-visible { outline: none; border-color: var(--bg); background: color-mix(in srgb, var(--bg) 14%, transparent); }
+.cform input:user-invalid, .cform textarea:user-invalid { border-color: #ff8a65; }
+.cform-foot { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; margin-top: 4px; }
+.cform .fine { margin: 0; font-size: 0.8125rem; color: color-mix(in srgb, var(--bg) 65%, var(--fg)); }
+.cform .fine a { color: var(--bg); text-decoration: underline; text-underline-offset: 3px; }
+.cform-sent { margin: 0; font-weight: 600; color: var(--bg); }
+.cform.is-sent > :not(.cform-sent) { display: none; }
+
+footer .wrap > a:not(.up) { color: var(--fg-3); }
+footer .wrap > a:not(.up):hover { color: var(--fg); }
+
+.legal { padding: clamp(40px, 6vw, 72px) 0; }
+.legal .wrap { max-width: 760px; }
+.legal .h2 { margin-bottom: 28px; }
+.legal .h3 { margin: 28px 0 8px; font-size: 1.0625rem; }
+.legal p { margin: 0 0 12px; color: var(--fg-2); }
+.legal p a { color: var(--accent); }
+.legal .fine { font-size: 0.875rem; color: var(--fg-3); }
+
+@media (max-width: 960px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero .hero-grid .display { max-width: 16ch; }
+  .diagram { max-width: 560px; }
+}
+@media (max-width: 760px) {
+  .contact-grid { grid-template-columns: 1fr; }
+  .cform .row-2 { grid-template-columns: 1fr; }
+}
+@media (max-width: 520px) {
+  .dg-flow { grid-template-columns: 1fr; gap: 8px; }
+  .dg-col { flex-direction: row; flex-wrap: wrap; }
+  .dg-arrow { width: 2px; height: 18px; justify-self: center; }
+  .dg-arrow::after { right: -4px; top: auto; bottom: -1px; border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 7px solid var(--line-strong); border-bottom: 0; }
+}
