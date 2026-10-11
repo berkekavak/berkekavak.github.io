@@ -1,0 +1,136 @@
+{
+  "lang": "de",
+  "locale": "de_DE",
+  "title": "Berke Kavak · Agentic-AI-Beratung, Berlin",
+  "description": "Agentic-AI-Beratung von Berke Kavak, Berlin: KI-Agenten, RAG-Assistenten und LLM-Systeme, konzipiert, evaluiert und produktiv betrieben in Ihrer eigenen Cloud. Mit sechs Jahren Produktions-ML für adidas, Philips, Sompo, PEMCO und Davies.",
+  "og_title": "Berke Kavak · Agentic-AI-Beratung",
+  "og_description": "KI-Agenten, die in Produktion gehen und dort bleiben. Agentische Systeme, Evaluation und LLM-Plattformen für Teams in der EU und den USA.",
+  "a11y": {
+    "skip": "Zum Inhalt springen",
+    "nav": "Hauptnavigation",
+    "theme": "Dunkelmodus umschalten",
+    "menu_open": "Menü öffnen",
+    "menu_close": "Menü schließen",
+    "menu": "Menü",
+    "lang": "Sprache"
+  },
+  "nav": {
+    "services": "Leistungen",
+    "work": "Projekte",
+    "approach": "Vorgehen",
+    "about": "Über mich",
+    "cta": "Gespräch starten"
+  },
+  "hero": {
+    "label": "Agentic-AI-Beratung · Berlin",
+    "h1": "KI-Agenten, die in Produktion gehen. Und dort bleiben.",
+    "lead": "Ich konzipiere, baue und härte agentische KI-Systeme: Assistenten, die in Ihren Dokumenten recherchieren, über Ihre Tools handeln und mehrstufige Aufgaben erledigen. Evaluiert an echten Aufgaben, betrieben in Ihrer eigenen Cloud, im Besitz Ihres Teams.",
+    "cta": "Gespräch starten",
+    "cta2": "Projekte ansehen",
+    "meta": [
+      {"b": "6+ Jahre", "s": "Produktions-ML und GenAI"},
+      {"b": "Agenten in Produktion", "s": "RAG, Tool-Nutzung, mehrstufige Workflows"},
+      {"b": "4 Märkte", "s": "USA · EU · Brasilien · Türkei"}
+    ]
+  },
+  "logos_label": "Projekte umgesetzt für",
+  "services": {
+    "label": "Leistungen",
+    "h2": "Vier Wege der Zusammenarbeit.",
+    "lead": "Jedes Projekt beginnt mit einem Workflow, der sich zu automatisieren lohnt, und endet mit einem System, das Ihr Team ohne mich betreibt.",
+    "items": [
+      {
+        "title": "Agentische Systeme und Assistenten",
+        "p": "KI-Agenten und RAG-Assistenten, die in Ihren Dokumenten recherchieren, Ihre Tools aufrufen und mehrstufige Aufgaben abschließen. Mit Menschen in der Schleife, wo es darauf ankommt.",
+        "chips": ["Agentic RAG", "Tool-Nutzung und Function Calling", "Mehrstufige Workflows", "Human-in-the-Loop"]
+      },
+      {
+        "title": "Evaluation, Guardrails und Zuverlässigkeit",
+        "p": "Der Teil, der einen Agenten sicher betreibbar macht: Offline- und Online-Evaluationen, Guardrails, Observability, Latenz- und Kostenkontrolle. Vor dem Launch gebaut, nicht nach dem ersten Vorfall.",
+        "chips": ["LLM-Evaluation", "Guardrails", "Observability", "Kosten und Latenz"]
+      },
+      {
+        "title": "Daten, Retrieval und Plattform",
+        "p": "Agentenfähige Grundlagen: semantische Suche mit hybridem Retrieval und Reranking, Lakehouse-Pipelines und LLMOps auf AWS und Databricks. Wo klassisches ML die bessere Antwort ist, auch Forecasting-, Churn- und Betrugsmodelle.",
+        "chips": ["Hybrides Retrieval", "Databricks Lakehouse", "AWS · GCP · Azure", "Prädiktives ML"]
+      },
+      {
+        "title": "Beratung und Fractional AI Lead",
+        "p": "Agentic-AI-Roadmap, Priorisierung von Anwendungsfällen, Build-or-Buy- und Architekturentscheidungen sowie operative Führung der Umsetzung über Ihre Teams hinweg.",
+        "chips": ["Use-Case-Bewertung", "Build or Buy", "Architektur-Reviews", "Fractional AI Lead"]
+      }
+    ]
+  },
+  "work": {
+    "label": "Projekte",
+    "h2": "Gemessen an Geschäftsergebnissen.",
+    "lead": "Zuerst agentische und GenAI-Projekte, dann das Produktions-ML dahinter. Jeweils mit dem Ergebnis, an dem sie gemessen wurden.",
+    "group1": "Agentic und GenAI",
+    "group2": "Produktions-ML und Daten",
+    "nda_tag": "Unter NDA",
+    "genai": [
+      {"sector": "Maritimes Plattform-Start-up", "title": "Agentischer RAG-Assistent", "p": "Ein durchgängig agentischer Assistent über Betriebsdokumente und Plattformdaten: Retrieval, Tool-Aufrufe und mehrstufige Antworten, vom ersten Prototyp bis in die Produktion.", "result": "End-to-end, vom Prototyp bis in die Produktion"},
+      {"sector": "Unternehmenssuche", "title": "Semantische Suche auf AWS", "p": "Hybrides Retrieval mit Reranking über große Dokumentbestände, auf AWS betrieben und an echten Nutzeranfragen evaluiert.", "result": "Hybrides Retrieval + Reranking in Produktion"},
+      {"sector": "Telekommunikation und Essenslieferung", "title": "NLP in Produktion", "p": "Textklassifikations- und Extraktionsmodelle für Telekommunikations- und Lieferdienst-Marken im Produktionsmaßstab.", "result": "Im Einsatz bei zwei Verbrauchermarken"},
+      {"sector": "Gesundheitswesen", "title": "Biopsie-Triage-Modell", "p": "Ein klinisches Triage-Modell, das Patientinnen und Patienten für eine Biopsie priorisiert und doppelt so viele behandlungsbedürftige Fälle erkennt.", "result": "2× mehr behandlungsbedürftige Fälle erkannt"}
+    ],
+    "ml": [
+      {"logo": "adidas", "sector": "Einzelhandel · Datenplattform", "p": "Produktlebenszyklus-Daten ins Databricks Lakehouse: ETL, MLflow-Pipelines und Power-BI-Reporting für Planungsteams.", "result": "Grundlage für Entscheidungen im Wert von ~1 Mio. $ pro Jahr"},
+      {"logo": "esn", "sector": "Konsumgüter · Supply Planning", "p": "Supply Planning und Automatisierung für die Marken der The Quality Group, mit ETL-Pipelines auf Databricks für Tableau-Dashboards.", "result": "Umsetzung: von Monaten auf Wochen"},
+      {"logo": "pemco", "sector": "Versicherung · Prädiktives ML", "p": "Drei ML-Projekte end-to-end: Absatzprognose, Kundenbindung und Cross-/Upselling-Targeting.", "result": "+1,5 % Kundenbindung ≈ 107.000 $ pro Jahr"},
+      {"logo": "davies", "sector": "Versicherungsdienstleistungen · Betrug", "p": "Modelle zur Betrugserkennung und Zahlungsprüfung, direkt in die Schadenbearbeitung integriert.", "result": "Fehlererkennung: von 1 von 8 auf 1 von 4"},
+      {"logo": "isyatirim", "sector": "Finanzen · Churn", "p": "Churn-Prognose für das führende Investmenthaus der Türkei; gefährdete Kunden werden den Kundenbetreuern frühzeitig gemeldet.", "result": "Gefährdete Kunden früh erkannt"},
+      {"logo": "sompo", "sector": "Versicherung · Segmentierung", "p": "Mikrosegmentierung in der Kfz-Versicherung für Profitabilität und Wachstum bei Sompo Seguros Brasil; Grundlage für die Preisgestaltung bei über 500.000 Policen pro Jahr.", "result": "Aktuarielle Effektivität um bis zu 50 % gesteigert"},
+      {"logo": "philips", "sector": "Gesundheitswesen · Forschung", "p": "Ausfallprognose für MRT-Komponenten als technischer Leiter eines EU-Forschungsprojekts, dazu das Medikamentenschrank-Projekt von ITEA.", "result": "2 EU-Konsortialprojekte"},
+      {"logo": null, "sector": "Und mehr", "p": "Retention-, NLP- und klinische Modelle für Kunden in den USA und Europa auf Spark und MLflow, betrieben on-premise sowie auf SageMaker, GCP und Azure.", "link": "Ein ähnliches Problem besprechen →"}
+    ]
+  },
+  "approach": {
+    "label": "Vorgehen",
+    "h2": "Früh prototypen. Evaluieren vor Autonomie. Übergeben.",
+    "lead": "Ein funktionierender Agent ist mehr wert als tausend Folien. Ich komme schnell dorthin und mache ihn dann so langweilig, dass man ihm in Produktion vertrauen kann.",
+    "steps": [
+      {"label": "01 · Entdecken", "title": "Den Workflow finden", "p": "Ein bis zwei Wochen in Ihrem Prozess und Ihren Daten. Wir wählen den Workflow, der sich zu automatisieren lohnt, die Erfolgsmetrik und die Stellen, an denen ein Mensch in der Schleife bleibt."},
+      {"label": "02 · Prototyp", "title": "An echter Arbeit beweisen", "p": "Innerhalb von Wochen ein funktionierender Agent auf Ihren echten Dokumenten und Tools. Die Entscheidung weiterzumachen fällt auf Basis von Belegen, nicht einer Präsentation."},
+      {"label": "03 · Härten", "title": "Autonomie verdienen", "p": "Evaluations-Suites, Guardrails, Observability und Kostenkontrolle. Betrieben in Ihrer Cloud, integriert in die Tools, die Ihr Team bereits nutzt."},
+      {"label": "04 · Übergabe", "title": "Ihr Team übernimmt", "p": "Dokumentation, Schulung und eine saubere Übergabe. Das Ziel ist ein System, das Sie ohne mich betreiben, und ein Grund, wieder anzurufen."}
+    ],
+    "principles": [
+      {"title": "Evaluation vor Autonomie", "p": "Ein Agent bekommt nur so viel Freiheit, wie die Evaluationen belegen. Gemessen, nicht angenommen."},
+      {"title": "Ihr Stack, Ihre Cloud", "p": "AWS, Databricks, GCP oder Azure. Kein neuer Vendor-Lock-in, und nichts verlässt Ihre Umgebung."},
+      {"title": "Keine Blackbox", "p": "Lesbarer Code, dokumentierte Entscheidungen und Evaluationen, die Sie selbst wiederholen können. Sie sollten alles prüfen können."}
+    ]
+  },
+  "about": {
+    "label": "Über mich",
+    "h2": "Angewandte Forschung, gemessen an der Umsetzung.",
+    "bio": [
+      "Ich bin Berke, KI-Berater in Berlin mit Fokus auf agentische Systeme. Ich arbeite an der Schnittstelle von <strong>angewandter Forschung und Umsetzung</strong>: Ich lese gern das Paper, gemessen werde ich aber daran, ob das System produktiv läuft und eine Geschäftskennzahl bewegt.",
+      "Seit 2023 verantworte ich bei BeeBI Consulting das AI- und GenAI-Portfolio für Kunden in der EU und den USA, vom Presales bis nach dem Go-live, bei fünf parallelen Kunden. Davor war ich frühes Teammitglied bei TAZI AI während <strong>4-fachem Wachstum und einer Finanzierungsrunde über 4,6 Mio. $</strong>, habe die KI-Lösungen zu wiederholbaren Angeboten gebündelt und Retention-, NLP- und klinische Modelle für Kunden in den USA und Europa ausgeliefert.",
+      "Meine Masterforschung an der Boğaziçi-Universität zur biomedizinischen Entitätsnormalisierung mit LLMs wurde im <strong>BioCreative VIII SympTEMIST Track</strong> veröffentlicht. Ein Doppelstudium in Wirtschaftsingenieurwesen und Volkswirtschaft an der Koç-Universität hat mich gelehrt, ML-Probleme zuerst als Geschäftsprobleme zu betrachten.",
+      "Ich arbeite auf Englisch und Türkisch und spreche gut Deutsch."
+    ],
+    "facts": [
+      {"logo": "bogazici", "alt": "Boğaziçi-Universität", "dt": "M.Sc. Informatik", "dd": "Boğaziçi-Universität", "sub": "· 2020–2023"},
+      {"logo": "koc", "alt": "Koç-Universität", "dt": "B.Sc. Wirtschaftsingenieurwesen + VWL", "dd": "Koç-Universität", "sub": "· Doppelstudium · Vehbi-Koç-Ehrenpreis"},
+      {"logo": "tum", "alt": "Technische Universität München", "dt": "Austausch", "dd": "Technische Universität München", "sub": "· School of Management"},
+      {"logo": null, "dt": "Publikation", "dd": "Symptom normalization using unsupervised learning and text similarity", "sub": "· Kavak &amp; Özgür, BioCreative VIII"},
+      {"logo": null, "dt": "Zertifizierung", "dd": "Microsoft PL-300", "sub": "· Power BI Data Analyst"},
+      {"logo": null, "dt": "Stack", "dd": "Python · SQL · TypeScript", "sub": "· AWS · Databricks · GCP · Azure · Docker · Elastic · MLflow"},
+      {"logo": null, "dt": "Standort", "dd": "Berlin", "sub": "· remote mit Teams in der EU und den USA"}
+    ]
+  },
+  "contact": {
+    "label": "Kontakt",
+    "h2": "Haben Sie einen Workflow, der sich zu automatisieren lohnt?",
+    "lead": "Erzählen Sie mir vom Prozess, den Sie automatisieren, oder vom Assistenten, den Sie bauen möchten. Ich antworte innerhalb von zwei Werktagen mit einer ehrlichen Einschätzung, ob es passt.",
+    "email_btn": "E-Mail schreiben",
+    "subject": "Anfrage Agentic AI",
+    "direct": "Oder direkt schreiben:"
+  },
+  "footer": {
+    "copy": "© 2026 Berke Kavak · Berlin",
+    "visits": "Besuche",
+    "top": "Nach oben ↑"
+  }
+}
